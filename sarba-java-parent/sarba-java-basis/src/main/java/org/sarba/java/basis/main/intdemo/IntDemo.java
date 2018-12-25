@@ -58,6 +58,9 @@ public class IntDemo  {
         System.out.println("============================");
         int o = 10 ;
         System.out.println(Integer.toOctalString(o));
+        System.out.println("============================");
+        Integer integer = 20;
+        System.out.println(integer.byteValue());
 
 
 
