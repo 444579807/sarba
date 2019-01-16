@@ -7,4 +7,12 @@
         <property name="name" value="property" />
     </bean>
 
+    <bean id="exampleBean" class="org.sarba.spring.bean.ExampleBean">
+        <constructor-arg value="example"  />
+    </bean>
+
+    <bean id="staticFactoryBean" class="org.sarba.spring.bean.StaticFactoryBean" factory-method="createBean" >
+        <constructor-arg value="static bean" />
+    </bean>
+
 </beans>

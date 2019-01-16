@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!--加载数据库配置文件-->
+   <properties resource="db.properties" />
+    <!--设置数据库结果集映射-->
+    <settings>
+        <!-- NONE 表示取消自动映射；PARTIAL 只会自动映射没有定义嵌套结果集映射的结果集。 FULL 会自动映射任意复杂的结果集（无论是否嵌套）-->
+        <setting name="autoMappingBehavior" value="FULL"/>
+        <!--指定 MyBatis 所用日志的具体实现，未指定时将自动查找:SLF4J | LOG4J | LOG4J2 | JDK_LOGGING | COMMONS_LOGGING | STDOUT_LOGGING | NO_LOGGING-->
+        <setting name="logImpl" value="STDOUT_LOGGING" />
+        <!--数据库事务提交方式：SIMPLE 就是普通的执行器；REUSE 执行器会重用预处理语句（prepared statements）； BATCH 执行器将重用语句并执行批量更新-->
+        <setting name="defaultExecutorType" value="SIMPLE" />
+
+    </settings>
+    <!-- 设置实体包别名，通过扫描包的方式设置-->
+    <typeAliases>
+        <package name="org.sarba.mybatis.hello.entity" />
+    </typeAliases>
+    <!--配置数据源-->
+   <environments default="development">
+       <environment id="development">
+           <!--数据源事务管理  JDBC – 这个配置就是直接使用了 JDBC 的提交和回滚设置
+                               MANAGED – 这个配置几乎没做什么。它从来不提交或回滚一个连接，而是让容器来管理事务的整个生命周期（比如 JEE 应用服务器的上下文）。
+                                          默认情况下它会关闭连接，然而一些容器并不希望这样，因此需要将 closeConnection 属性设置为 false 来阻止它默认的关闭行为。
+             -->
+           <transactionManager type="JDBC" >
+               <property name="closeConnection" value="false"/>
+           </transactionManager>
+           <dataSource type="POOLEd">
+               <property name="driver" value="${db.driver}" />
+               <property name="url" value="${db.url}" />
+               <property name="username" value="${db.name}" />
+               <property name="password" value="${db.pswd}" />
+           </dataSource>
+       </environment>
+   </environments>
+    <!--配置映射文件-->
+    <mappers>
+        <mapper resource="mapper/power.xml" />
+    </mappers>
+
+</configuration>

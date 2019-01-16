@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.sarba.mybatis.hello.mapper.PowerMapper">
+    <select id="selectPowers" resultType="Power">
+        SELECT * FROM power
+    </select>
+    <insert id="save" parameterType="org.sarba.mybatis.druid.entity.Power" useGeneratedKeys="true">
+        INSERT INTO power (powerName) VALUES(#{powerName})
+    </insert>
+    <insert id="batchSave" parameterType="java.util.List">
+        INSERT INTO power (powerName) VALUES
+        <foreach collection="list" item="p" index="index"  separator=",">
+            (#{p.powerName})
+        </foreach>
+    </insert>
+</mapper>
