@@ -1,11 +1,16 @@
-package org.sarba.mybatis.hello.entity;
+package org.sarba.mybatis.entity;
+
 
 import java.io.Serializable;
 
-public class Power implements Serializable {
+public class Power  implements Serializable{
 
     private Integer id;
-    private String  powerName;
+    private String powerName;
+
+    public Power(String powerName) {
+        this.powerName = powerName;
+    }
 
     public Integer getId() {
         return id;

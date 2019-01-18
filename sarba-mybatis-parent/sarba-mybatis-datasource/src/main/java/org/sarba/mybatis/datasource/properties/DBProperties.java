@@ -27,7 +27,7 @@ public enum  DBProperties {
         }
     }
 
-    public static DataBases getDataBases() {
+    public  DataBases getDataBases() {
         return dataBases;
     }
 }

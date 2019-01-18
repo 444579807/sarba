@@ -10,10 +10,10 @@ public class PooledStrategy implements DataSourceStrategy {
     @Override
     public DataSource getDataSource(DataBases dataBases) {
         PooledDataSource dataSource = new PooledDataSource();
-        dataSource.setDriver(DBProperties.getDataBases().getDriverClassName());
-        dataSource.setUrl(DBProperties.getDataBases().getUrl());
-        dataSource.setUsername(DBProperties.getDataBases().getUserName());
-        dataSource.setPassword(DBProperties.getDataBases().getPassWord());
+        dataSource.setDriver(DBProperties.INSTANCE.getDataBases().getDriverClassName());
+        dataSource.setUrl(DBProperties.INSTANCE.getDataBases().getUrl());
+        dataSource.setUsername(DBProperties.INSTANCE.getDataBases().getUserName());
+        dataSource.setPassword(DBProperties.INSTANCE.getDataBases().getPassWord());
         return dataSource;
     }
 }

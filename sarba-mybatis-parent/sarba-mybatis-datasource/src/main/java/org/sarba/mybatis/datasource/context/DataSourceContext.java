@@ -14,6 +14,6 @@ public class DataSourceContext {
     }
 
     public DataSource  getDataSource(){
-        return dataSourceStrategy.getDataSource(DBProperties.getDataBases());
+        return dataSourceStrategy.getDataSource(DBProperties.INSTANCE.getDataBases());
     }
 }

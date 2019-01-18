@@ -1,9 +1,10 @@
 package org.sarba.mybatis.hello.mapper;
 
 import org.apache.ibatis.annotations.Select;
-import org.sarba.mybatis.hello.entity.Power;
+import org.sarba.mybatis.entity.Power;
 
 import java.util.List;
+
 
 public interface PowerMapper {
 

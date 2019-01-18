@@ -11,6 +11,11 @@
     <modules>
         <module>sarba-mybatis-hello</module>
         <module>sarba-mybatis-datasource</module>
+        <module>sarba-mybatis-common</module>
+        <module>sarba-mybatis-select</module>
+        <module>sarba-mybatis-xmlmapper</module>
+        <module>sarba-mybatis-entity</module>
+        <module>sarba-mybatis-spring</module>
     </modules>
 
     <dependencies>
