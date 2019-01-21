@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/sarba.iml" filepath="$PROJECT_DIR$/.idea/sarba.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-java-parent/sarba-java-basis/sarba-java-basis.iml" filepath="$PROJECT_DIR$/sarba-java-parent/sarba-java-basis/sarba-java-basis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-java-parent/sarba-java-common/sarba-java-common.iml" filepath="$PROJECT_DIR$/sarba-java-parent/sarba-java-common/sarba-java-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-java-parent/sarba-java-design/sarba-java-design.iml" filepath="$PROJECT_DIR$/sarba-java-parent/sarba-java-design/sarba-java-design.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-java-parent/sarba-java-design/sarba-java-design-abstractfactory/sarba-java-design-abstractfactory.iml" filepath="$PROJECT_DIR$/sarba-java-parent/sarba-java-design/sarba-java-design-abstractfactory/sarba-java-design-abstractfactory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-java-parent/sarba-java-design/sarba-java-design-factory/sarba-java-design-factory.iml" filepath="$PROJECT_DIR$/sarba-java-parent/sarba-java-design/sarba-java-design-factory/sarba-java-design-factory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-java-parent/sarba-java-design/sarba-java-design-strategy/sarba-java-design-strategy.iml" filepath="$PROJECT_DIR$/sarba-java-parent/sarba-java-design/sarba-java-design-strategy/sarba-java-design-strategy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-java-parent/sarba-java-parent.iml" filepath="$PROJECT_DIR$/sarba-java-parent/sarba-java-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-mybatis-parent/sarba-mybatis-datasource/sarba-mybatis-datasource.iml" filepath="$PROJECT_DIR$/sarba-mybatis-parent/sarba-mybatis-datasource/sarba-mybatis-datasource.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-mybatis-parent/sarba-mybatis-entity/sarba-mybatis-entity.iml" filepath="$PROJECT_DIR$/sarba-mybatis-parent/sarba-mybatis-entity/sarba-mybatis-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-mybatis-parent/sarba-mybatis-hello/sarba-mybatis-hello.iml" filepath="$PROJECT_DIR$/sarba-mybatis-parent/sarba-mybatis-hello/sarba-mybatis-hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-mybatis-parent/sarba-mybatis-parent.iml" filepath="$PROJECT_DIR$/sarba-mybatis-parent/sarba-mybatis-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-mybatis-parent/sarba-mybatis-select/sarba-mybatis-select.iml" filepath="$PROJECT_DIR$/sarba-mybatis-parent/sarba-mybatis-select/sarba-mybatis-select.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-mybatis-parent/sarba-mybatis-spring/sarba-mybatis-spring.iml" filepath="$PROJECT_DIR$/sarba-mybatis-parent/sarba-mybatis-spring/sarba-mybatis-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-mybatis-parent/sarba-mybatis-xmlmapper/sarba-mybatis-xmlmapper.iml" filepath="$PROJECT_DIR$/sarba-mybatis-parent/sarba-mybatis-xmlmapper/sarba-mybatis-xmlmapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-shiro-parent/sarba-shiro-hello/sarba-shiro-hello.iml" filepath="$PROJECT_DIR$/sarba-shiro-parent/sarba-shiro-hello/sarba-shiro-hello.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-shiro-parent/sarba-shiro-parent.iml" filepath="$PROJECT_DIR$/sarba-shiro-parent/sarba-shiro-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-spring-parent/sarba-spring-bean/sarba-spring-bean.iml" filepath="$PROJECT_DIR$/sarba-spring-parent/sarba-spring-bean/sarba-spring-bean.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-spring-parent/sarba-spring-parent.iml" filepath="$PROJECT_DIR$/sarba-spring-parent/sarba-spring-parent.iml" />
+    </modules>
+  </component>
+</project>

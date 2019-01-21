@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="sarba-java-basis" />
+        <module name="sarba-java-common" />
+        <module name="sarba-java-design-abstractfactory" />
+        <module name="sarba-java-design-factory" />
+        <module name="sarba-java-design-strategy" />
+        <module name="sarba-mybatis-datasource" />
+        <module name="sarba-mybatis-druid" />
+        <module name="sarba-mybatis-entity" />
+        <module name="sarba-mybatis-hello" />
+        <module name="sarba-mybatis-select" />
+        <module name="sarba-mybatis-spring" />
+        <module name="sarba-mybatis-xmlmapper" />
+        <module name="sarba-shiro-hello" />
+        <module name="sarba-spring-bean" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="1.8">
+      <module name="sarba-java-basis" target="1.8" />
+      <module name="sarba-java-common" target="1.8" />
+      <module name="sarba-java-design" target="1.8" />
+      <module name="sarba-java-design-abstractfactory" target="1.8" />
+      <module name="sarba-java-design-factory" target="1.8" />
+      <module name="sarba-java-design-strategy" target="1.8" />
+      <module name="sarba-java-parent" target="1.8" />
+      <module name="sarba-mybatis-datasource" target="1.8" />
+      <module name="sarba-mybatis-entity" target="1.8" />
+      <module name="sarba-mybatis-hello" target="1.8" />
+      <module name="sarba-mybatis-parent" target="1.8" />
+      <module name="sarba-mybatis-select" target="1.8" />
+      <module name="sarba-mybatis-spring" target="1.8" />
+      <module name="sarba-mybatis-xmlmapper" target="1.8" />
+      <module name="sarba-shiro-hello" target="1.8" />
+      <module name="sarba-shiro-parent" target="1.8" />
+      <module name="sarba-spring-bean" target="1.8" />
+      <module name="sarba-spring-parent" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/sarba-java-parent/sarba-java-basis/pom.xml" />
+        <option value="$PROJECT_DIR$/sarba-java-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/sarba-shiro-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/sarba-spring-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/sarba-java-parent/sarba-java-design/pom.xml" />
+        <option value="$PROJECT_DIR$/sarba-srping-boot-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/sarba-mybatis-parent/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="288c43be-ec42-43fe-bd68-98a1bc80654a" />
+      <option name="name" value="288c43be-ec42-43fe-bd68-98a1bc80654a" />
+      <option name="url" value="https://mvnrepository.com/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="1214554c-98d8-450d-ba27-706bfde823cd" />
+      <option name="name" value="1214554c-98d8-450d-ba27-706bfde823cd" />
+      <option name="url" value="http://maven.aliyun.com/nexus/content/groups/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="02021dcb-2456-43aa-aed2-c23334b198d6" />
+      <option name="name" value="02021dcb-2456-43aa-aed2-c23334b198d6" />
+      <option name="url" value="http://repo1.maven.org/maven2" />
+    </remote-repository>
+  </component>
+</project>
