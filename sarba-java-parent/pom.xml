@@ -12,6 +12,7 @@
         <module>sarba-java-basis</module>
         <module>sarba-java-design</module>
         <module>sarba-java-common</module>
+        <module>sarba-java-bean</module>
     </modules>
 
     <build>

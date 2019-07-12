@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/sarba.iml" filepath="$PROJECT_DIR$/.idea/sarba.iml" />
       <module fileurl="file://$PROJECT_DIR$/sarba-java-parent/sarba-java-basis/sarba-java-basis.iml" filepath="$PROJECT_DIR$/sarba-java-parent/sarba-java-basis/sarba-java-basis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-java-parent/sarba-java-bean/sarba-java-bean.iml" filepath="$PROJECT_DIR$/sarba-java-parent/sarba-java-bean/sarba-java-bean.iml" />
       <module fileurl="file://$PROJECT_DIR$/sarba-java-parent/sarba-java-common/sarba-java-common.iml" filepath="$PROJECT_DIR$/sarba-java-parent/sarba-java-common/sarba-java-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/sarba-java-parent/sarba-java-design/sarba-java-design.iml" filepath="$PROJECT_DIR$/sarba-java-parent/sarba-java-design/sarba-java-design.iml" />
       <module fileurl="file://$PROJECT_DIR$/sarba-java-parent/sarba-java-design/sarba-java-design-abstractfactory/sarba-java-design-abstractfactory.iml" filepath="$PROJECT_DIR$/sarba-java-parent/sarba-java-design/sarba-java-design-abstractfactory/sarba-java-design-abstractfactory.iml" />
@@ -17,6 +18,8 @@
       <module fileurl="file://$PROJECT_DIR$/sarba-mybatis-parent/sarba-mybatis-select/sarba-mybatis-select.iml" filepath="$PROJECT_DIR$/sarba-mybatis-parent/sarba-mybatis-select/sarba-mybatis-select.iml" />
       <module fileurl="file://$PROJECT_DIR$/sarba-mybatis-parent/sarba-mybatis-spring/sarba-mybatis-spring.iml" filepath="$PROJECT_DIR$/sarba-mybatis-parent/sarba-mybatis-spring/sarba-mybatis-spring.iml" />
       <module fileurl="file://$PROJECT_DIR$/sarba-mybatis-parent/sarba-mybatis-xmlmapper/sarba-mybatis-xmlmapper.iml" filepath="$PROJECT_DIR$/sarba-mybatis-parent/sarba-mybatis-xmlmapper/sarba-mybatis-xmlmapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-redis-parent/sarba-redis-helloword/sarba-redis-helloword.iml" filepath="$PROJECT_DIR$/sarba-redis-parent/sarba-redis-helloword/sarba-redis-helloword.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sarba-redis-parent/sarba-redis-parent.iml" filepath="$PROJECT_DIR$/sarba-redis-parent/sarba-redis-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/sarba-shiro-parent/sarba-shiro-hello/sarba-shiro-hello.iml" filepath="$PROJECT_DIR$/sarba-shiro-parent/sarba-shiro-hello/sarba-shiro-hello.iml" />
       <module fileurl="file://$PROJECT_DIR$/sarba-shiro-parent/sarba-shiro-parent.iml" filepath="$PROJECT_DIR$/sarba-shiro-parent/sarba-shiro-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/sarba-spring-parent/sarba-spring-bean/sarba-spring-bean.iml" filepath="$PROJECT_DIR$/sarba-spring-parent/sarba-spring-bean/sarba-spring-bean.iml" />

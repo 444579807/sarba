@@ -4,6 +4,8 @@ import org.sarba.java.common.inter.impl.JavaProgrammer;
 import org.sarba.java.common.inter.impl.PhpProgrammer;
 import org.sarba.java.common.inter.impl.PythonProgrammer;
 
+import java.util.UUID;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,6 +15,7 @@ public class Main {
         context1.say();
         StrategyContext context2 = new StrategyContext(new PhpProgrammer());
         context2.say();
+
     }
 
 }

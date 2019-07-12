@@ -7,8 +7,6 @@ import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 import org.apache.shiro.util.Factory;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 public class ShiroDemo {
 

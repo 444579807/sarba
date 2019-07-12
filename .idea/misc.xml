@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/sarba-java-parent/sarba-java-design/pom.xml" />
         <option value="$PROJECT_DIR$/sarba-srping-boot-parent/pom.xml" />
         <option value="$PROJECT_DIR$/sarba-mybatis-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/sarba-redis-parent/pom.xml" />
       </list>
     </option>
   </component>
