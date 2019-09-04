@@ -8,7 +8,7 @@ import java.util.Set;
  * @program: sarba
  * @author: zhanght
  * @create: 2019-07-11 11:32
- * @description: redis key Ïà¹Ø²Ù×÷
+ * @description: redis ke
  **/
 public class RedisKeyDemo  {
 
@@ -16,12 +16,12 @@ public class RedisKeyDemo  {
         getAllKeys();
         getAllKeys("s*");
         /**
-         *  key  pattern  ÈçÏÂ
-         *    *  ÅäºÏÒ»¸ö»òÕß¶à¸ö×Ö·û
-         *    ?  Æ¥ÅäÒ»¸ö×Ö·û
-         *    [] À¨ºÅÄÚ»òÕßµÄ¹ØÏµ
-         *    ÌØÊâ·ûºÅÓÃ \ ¸ô¿ª
-        **/
+         *  key  pattern  å¦‚ä¸‹
+         *    *  é…åˆä¸€ä¸ªæˆ–è€…å¤šä¸ªå­—ç¬¦
+         *    ?  åŒ¹é…ä¸€ä¸ªå­—ç¬¦
+         *    [] æ‹¬å·å†…æˆ–è€…çš„å…³ç³»
+         *    ç‰¹æ®Šç¬¦å·ç”¨ \ éš”å¼€
+         **/
         getAllKeys("s[ite]te-list");
     }
 
@@ -30,8 +30,8 @@ public class RedisKeyDemo  {
      * @return: void
      * @Author: zhanght
      * @Date: 2019/7/11
-     * @Description: »ñÈ¡ËùÓĞkey
-    **/
+     * @Description: è·å–æ‰€æœ‰key
+     **/
     public static void getAllKeys(){
         Jedis jedis = JedisUtil.INSTANCE.getInstance();
         Set<String> keys = jedis.keys("*");
@@ -45,7 +45,7 @@ public class RedisKeyDemo  {
      * @return: void
      * @Author: zhanght
      * @Date: 2019/7/11
-     * @Description: »ñÈ¡·ûºÏÌõ¼şµÄËùÓĞkey
+     * @Description: è·å–ç¬¦åˆæ¡ä»¶çš„æ‰€æœ‰key
      **/
     public static void getAllKeys(String pattern){
         Jedis jedis = JedisUtil.INSTANCE.getInstance();

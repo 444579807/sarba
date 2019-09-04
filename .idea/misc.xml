@@ -11,6 +11,8 @@
         <option value="$PROJECT_DIR$/sarba-srping-boot-parent/pom.xml" />
         <option value="$PROJECT_DIR$/sarba-mybatis-parent/pom.xml" />
         <option value="$PROJECT_DIR$/sarba-redis-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/sarba-springboot-patent/pom.xml" />
+        <option value="$PROJECT_DIR$/sarba-springboot-patent/sarba-springboot-web/pom.xml" />
       </list>
     </option>
   </component>

@@ -13,18 +13,18 @@ public class RedisStringJava {
     public static void main(String[] args) {
         Jedis jedis = JedisUtil.INSTANCE.getInstance();
         jedis.set("name","test");
-        //判断key是否存在
+        //鍒ゆ柇key鏄惁瀛樺湪
         System.out.println(jedis.exists("name"));
-        //两秒之后删除key
+        //涓ょ涔嬪悗鍒犻櫎key
         jedis.expireAt("name",1562659512);
         try {
             Thread.sleep(60000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        //判断key是否存在
+        //鍒ゆ柇key鏄惁瀛樺湪
         System.out.println(jedis.exists("name"));
-        System.out.println("name 的值：" + jedis.get("name"));
+        System.out.println("name 鐨勫�硷細" + jedis.get("name"));
 
     }
 

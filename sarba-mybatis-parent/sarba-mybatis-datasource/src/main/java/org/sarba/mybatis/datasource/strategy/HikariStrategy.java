@@ -10,10 +10,10 @@ public class HikariStrategy implements DataSourceStrategy {
     @Override
     public DataSource getDataSource(DataBases dataBases) {
         HikariDataSource dataSource = new HikariDataSource();
-        dataSource.setDriverClassName(DBProperties.INSTANCE.getDataBases().getDriverClassName());
-        dataSource.setJdbcUrl(DBProperties.INSTANCE.getDataBases().getUrl());
-        dataSource.setUsername(DBProperties.INSTANCE.getDataBases().getUserName());
-        dataSource.setPassword(DBProperties.INSTANCE.getDataBases().getPassWord());
+        dataSource.setDriverClassName(dataBases.getDriverClassName());
+        dataSource.setJdbcUrl(dataBases.getUrl());
+        dataSource.setUsername(dataBases.getUserName());
+        dataSource.setPassword(dataBases.getPassWord());
         return dataSource;
     }
 }

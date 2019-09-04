@@ -5,18 +5,23 @@ import java.io.Serializable;
 
 public class Power  implements Serializable{
 
-    private Integer id;
+    private Long id;
     private String powerName;
+
+    public Power(Long id,String powerName){
+        this.id = id;
+        this.powerName = powerName;
+    }
 
     public Power(String powerName) {
         this.powerName = powerName;
     }
 
-    public Integer getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(Integer id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

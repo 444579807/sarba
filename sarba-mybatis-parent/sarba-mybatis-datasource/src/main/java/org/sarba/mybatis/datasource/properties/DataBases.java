@@ -2,7 +2,7 @@ package org.sarba.mybatis.datasource.properties;
 
 import java.io.Serializable;
 
-public class DataBases implements Serializable {
+public class DataBases implements Serializable,Cloneable {
 
     private String driverClassName;
     private String url;
@@ -39,5 +39,17 @@ public class DataBases implements Serializable {
 
     public void setPassWord(String passWord) {
         this.passWord = passWord;
+    }
+
+    @Override
+    protected Object clone(){
+        Object o = null;
+        try {
+            //Object中的clone()识别出你要复制的是哪一个对象
+            o = (DataBases) super.clone();
+        } catch (CloneNotSupportedException e) {
+            System.out.println(e.toString());
+        }
+        return o;
     }
 }

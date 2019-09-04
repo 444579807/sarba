@@ -6,7 +6,11 @@ import redis.clients.jedis.Jedis;
 
 import java.io.*;
 import java.net.MalformedURLException;
+import java.util.Date;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
+import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * @program: sarba
@@ -19,70 +23,50 @@ public class HelloWorld {
 
     public static void main(String[] args) throws Exception {
         /*Jedis jedis = new Jedis("127.0.0.1");
-        System.out.println("Á¬½Ó³É¹¦£¡");
+        System.out.println("è¿æ¥æˆåŠŸï¼");
         jedis.auth("111111");
         jedis.set("name","zht");
-        System.out.println("redis ´æ´¢×Ö·û´®Îª£º" + jedis.get("name"));
+        System.out.println("redis ï¿½æ´¢ï¿½Ö·ï¿½ï¿½ï¿½Îªï¿½ï¿½" + jedis.get("name"));
         jedis.lpush("site-list", "Runoob");
         jedis.lpush("site-list", "Google");
         jedis.lpush("site-list", "Taobao");
 
         List<String> list = jedis.lrange("site-list", 0 ,2);
         for(int i=0; i<list.size(); i++) {
-            System.out.println("ÁĞ±íÏîÎª: "+list.get(i));
+            System.out.println("ï¿½Ğ±ï¿½ï¿½ï¿½Îª: "+list.get(i));
         }*/
-
-        try{
-            FileInputStream fis = new FileInputStream("d:\\test.jpg");//´Óa.txtÖĞ¶Á³ö
-            byte[] data = readInputStream(fis);
-//newÒ»¸öÎÄ¼ş¶ÔÏóÓÃÀ´±£´æÍ¼Æ¬£¬Ä¬ÈÏ±£´æµ±Ç°¹¤³Ì¸ùÄ¿Â¼
-            File imageFile = new File("\\\\192.168.3.110\\carnet\\test.jpg");
-//´´½¨Êä³öÁ÷
-            FileOutputStream outStream = new FileOutputStream(imageFile);
-//Ğ´ÈëÊı¾İ
-            outStream.write(data);
-//¹Ø±ÕÊä³öÁ÷
-            outStream.close();
-        }
-        catch(Exception ex){
-            ex.printStackTrace();
-        }
-        //smb://xxx:xxx@192.168.2.188/testIndex/
-        String url="smb://192.168.3.110/carnet/a.txt";
-       /* try {
-            SmbFile smbFile = new SmbFile(url);
-            int length = smbFile.getContentLength();// µÃµ½ÎÄ¼şµÄ´óĞ¡
-            byte buffer[] = new byte[length];
-            SmbFileInputStream in = new SmbFileInputStream(smbFile);
-            // ½¨Á¢smbÎÄ¼şÊäÈëÁ÷
-            while ((in.read(buffer)) != -1) {
-
-                System.out.write(buffer);
-                System.out.println();
-                System.out.println(buffer.length);
+        ConcurrentHashMap<String, TimerTask> taskMap = new ConcurrentHashMap<String, TimerTask>();
+        Timer timer = new Timer();
+        String test = "ddd";
+        TimerTask timerTask = new TimerTask() {
+            @Override
+            public void run() {
+                System.out.println("time :" + new Date() + " ; name : " + test);
             }
-            in.close();
-        } catch (Exception e) {
-            e.printStackTrace();
+        };
+        TimerTask timerTask2 = new TimerTask() {
+            @Override
+            public void run() {
+                System.out.println("time :" + new Date() + " ; name 2: " + test);
+            }
+        };
+        timer.schedule(timerTask2, 1000, 1000);
+        timer.schedule(timerTask, 1000, 1000);
+        taskMap.put("a",timerTask);
+        taskMap.put("b",timerTask2);
+        Thread.sleep(4000);
+        timerTask.cancel();
+        timer.purge();
+        if(taskMap.containsKey("a")){
+            taskMap.remove("a");
         }
-*/
+        System.out.println(taskMap.size());
+        timerTask2.cancel();
+        System.out.println(timer.purge());
+        Thread.sleep(4000);
+
+        System.out.println(timer.purge());
 
     }
 
-    public static byte[] readInputStream(InputStream inStream) throws Exception{
-        ByteArrayOutputStream outStream = new ByteArrayOutputStream();
-//´´½¨Ò»¸öBuffer×Ö·û´®
-        byte[] buffer = new byte[1024];
-//Ã¿´Î¶ÁÈ¡µÄ×Ö·û´®³¤¶È£¬Èç¹ûÎª-1£¬´ú±íÈ«²¿¶ÁÈ¡Íê±Ï
-        int len = 0;
-//Ê¹ÓÃÒ»¸öÊäÈëÁ÷´ÓbufferÀï°ÑÊı¾İ¶ÁÈ¡³öÀ´
-        while( (len=inStream.read(buffer)) != -1 ){
-//ÓÃÊä³öÁ÷ÍùbufferÀïĞ´ÈëÊı¾İ£¬ÖĞ¼ä²ÎÊı´ú±í´ÓÄÄ¸öÎ»ÖÃ¿ªÊ¼¶Á£¬len´ú±í¶ÁÈ¡µÄ³¤¶È
-            outStream.write(buffer, 0, len);
-        }
-//¹Ø±ÕÊäÈëÁ÷
-        inStream.close();
-//°ÑoutStreamÀïµÄÊı¾İĞ´ÈëÄÚ´æ
-        return outStream.toByteArray();
-    }
 }

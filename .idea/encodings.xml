@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/sarba-redis-parent/sarba-redis-helloword/src/main/java/org/sarba/redis/helloworld/HelloWorld.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/sarba-redis-parent/sarba-redis-helloword/src/main/java/org/sarba/redis/helloworld/RedisKeyDemo.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sarba-redis-parent/sarba-redis-helloword/src/main/java/org/sarba/redis/helloworld/RedisStringJava.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sarba-spring-parent/sarba-spring-bean/src/main/java/org/sarba/spring/bean/Main.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sarba-springboot-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sarba-springboot-patent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sarba-springboot-patent/sarba-springboot-web" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
