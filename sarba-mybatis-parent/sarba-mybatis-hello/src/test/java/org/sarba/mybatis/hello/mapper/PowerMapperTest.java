@@ -5,8 +5,8 @@ import org.apache.ibatis.logging.LogFactory;
 import org.apache.ibatis.session.ExecutorType;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
+import org.sarba.mybatis.entity.Power;
 import org.sarba.mybatis.hello.db.DBUtil;
-import org.sarba.mybatis.hello.entity.Power;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -58,8 +58,7 @@ public class PowerMapperTest {
         sqlSession.commit(false);
         try {
             for (int i = 0; i <10000 ; i++) {
-                Power power = new Power();
-                power.setPowerName("测试" + i);
+                Power power = new Power("测试" + i);
                 powerMapper.save(power);
             }
             sqlSession.commit();
@@ -79,8 +78,7 @@ public class PowerMapperTest {
         try {
             List<Power> powers = new ArrayList<Power>();
             for (int i = 0; i <10000 ; i++) {
-                Power power = new Power();
-                power.setPowerName("测试" + i);
+                Power power = new Power("测试" + i);
                 powers.add(power);
             }
             powerMapper.batchSave(powers);

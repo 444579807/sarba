@@ -3,6 +3,7 @@
 *.iml
 *.ipr
 *.iws
+.idea/
 build-idea/
 
 # eclipse files

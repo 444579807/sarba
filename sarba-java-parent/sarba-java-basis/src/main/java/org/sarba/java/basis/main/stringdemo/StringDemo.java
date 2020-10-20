@@ -8,7 +8,7 @@ public class StringDemo {
     }
 
     public static void method2(String str){
-        str = str + "aaa";
+        str = "aaa";
         System.out.println(str);
     }
 
@@ -19,10 +19,14 @@ public class StringDemo {
 
     public static void main(String[] args) {
         String str = new String("sss");
-        method1(str);
-        System.out.println(str);
-        method2(str);
-        System.out.println(str);
+        String str1 = "sss";
+        //method1(str);17025d8108b
+
+        System.out.println(str1);
+        method2(str1);
+        System.out.println(str1);
+
+
     }
 
 }
