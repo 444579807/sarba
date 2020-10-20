@@ -2,6 +2,6 @@ package org.sarba.java.sort;
 
 public interface ISortMethod {
 
-    public void sort(int[] t);
+    public int[] sort(int[] arr);
 
 }
