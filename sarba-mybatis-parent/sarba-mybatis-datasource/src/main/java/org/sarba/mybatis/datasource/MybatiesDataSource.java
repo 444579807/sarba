@@ -1,10 +1,7 @@
 package org.sarba.mybatis.datasource;
 
 import org.apache.ibatis.mapping.Environment;
-import org.apache.ibatis.session.Configuration;
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.apache.ibatis.session.*;
 import org.apache.ibatis.transaction.TransactionFactory;
 import org.apache.ibatis.transaction.jdbc.JdbcTransactionFactory;
 import org.sarba.mybatis.datasource.context.DataSourceContext;
@@ -53,6 +50,10 @@ public enum  MybatiesDataSource {
 
     public SqlSession getHikariSqlSession(){
         return dataSourceMap.get("hikari").openSession();
+    }
+
+    public SqlSession getHikariSqlSession(ExecutorType executorType){
+        return dataSourceMap.get("hikari").openSession(executorType);
     }
 
     public SqlSession getPooledSqlSession(){

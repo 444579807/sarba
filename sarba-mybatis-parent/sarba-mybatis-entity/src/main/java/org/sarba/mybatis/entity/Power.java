@@ -8,6 +8,9 @@ public class Power  implements Serializable{
     private Integer id;
     private String powerName;
 
+    public Power() {
+    }
+
     public Power(String powerName) {
         this.powerName = powerName;
     }

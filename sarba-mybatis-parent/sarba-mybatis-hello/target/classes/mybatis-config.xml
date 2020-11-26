@@ -17,7 +17,7 @@
     </settings>
     <!-- 设置实体包别名，通过扫描包的方式设置-->
     <typeAliases>
-        <package name="org.sarba.mybatis.hello.entity" />
+        <package name="org.sarba.mybatis.entity" />
     </typeAliases>
     <!--配置数据源-->
    <environments default="development">
@@ -27,7 +27,7 @@
                                           默认情况下它会关闭连接，然而一些容器并不希望这样，因此需要将 closeConnection 属性设置为 false 来阻止它默认的关闭行为。
              -->
            <transactionManager type="JDBC" />
-           <dataSource type="com.zaxxer.hikari.HikariDataSource">
+           <dataSource type="POOLED">
                <property name="driver" value="${db.driver}" />
                <property name="url" value="${db.url}" />
                <property name="username" value="${db.name}" />

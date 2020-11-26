@@ -11,6 +11,23 @@
 
     <groupId>org.sarba.mybatis</groupId>
     <artifactId>sarba-mybatis-hello</artifactId>
+    <properties>
+        <sarba.mybatis.version>1.0-SNAPSHOT</sarba.mybatis.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.sarba.mybatis</groupId>
+            <artifactId>sarba-mybatis-entity</artifactId>
+            <version>${sarba.mybatis.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.sarba.mybatis</groupId>
+            <artifactId>sarba-mybatis-datasource</artifactId>
+            <version>${sarba.mybatis.version}</version>
+        </dependency>
+    </dependencies>
+
     <build>
         <plugins>
             <plugin>
@@ -24,12 +41,5 @@
             </plugin>
         </plugins>
     </build>
-    <dependencies>
-        <dependency>
-            <groupId>org.sarba.mybatis</groupId>
-            <artifactId>sarba-mybatis-entity</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
-    </dependencies>
 
 </project>

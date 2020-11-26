@@ -1,5 +1,6 @@
 package org.sarba.mybatis.hello.mapper;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
 import org.sarba.mybatis.entity.Power;
 

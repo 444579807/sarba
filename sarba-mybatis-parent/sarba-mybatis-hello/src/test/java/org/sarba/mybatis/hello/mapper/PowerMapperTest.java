@@ -72,7 +72,7 @@ public class PowerMapperTest {
 
     @Test
     public void testBatchSave() throws Exception {
-        SqlSession sqlSession = sqlSessionFactory.openSession(ExecutorType.SIMPLE);
+        SqlSession sqlSession = sqlSessionFactory.openSession(ExecutorType.BATCH);
         PowerMapper powerMapper = sqlSession.getMapper(PowerMapper.class);
         sqlSession.commit(false);
         try {

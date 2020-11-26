@@ -6,7 +6,7 @@
 <select id="selectPowers" resultType="Power">
     SELECT * FROM power
 </select>
-<insert id="save" parameterType="org.sarba.mybatis.druid.entity.Power" useGeneratedKeys="true">
+<insert id="save" parameterType="org.sarba.mybatis.entity.Power" useGeneratedKeys="true">
     INSERT INTO power (powerName) VALUES(#{powerName})
 </insert>
 <insert id="batchSave" parameterType="java.util.List">
